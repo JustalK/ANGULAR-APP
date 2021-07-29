@@ -11,6 +11,8 @@ For the test, I switch the basic Karma to `Jest` and for the e2e test, I configu
 
 For the technical documentation, I am using `JSDoc`.
 
+The alias are configured inside the `tsconfig.json`.
+
 ## Plan of the presentation
 
 I explain with all the details how I build the project and my way of working.
