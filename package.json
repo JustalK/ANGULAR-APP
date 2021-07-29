@@ -5,12 +5,16 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "dev": "npm run linter:fix && ng serve",
+    "build:docs": "npx jsdoc -r ./src ./README.md",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint",
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "linter": "ng lint",
+    "linter:fix": "ng lint --fix",
+    "check-update": "npm outdated --depth=0"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +27,7 @@
     "@angular/platform-browser-dynamic": "~12.0.5",
     "@angular/router": "~12.0.5",
     "@briebug/jest-schematic": "^3.1.0",
+    "jsdoc": "^3.6.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
